@@ -7,6 +7,7 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+
 # News Portal - Laravel CRUD App
 
 Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi dan CRUD (Create, Read, Update, Delete) untuk mengelola konten berita.
@@ -24,10 +25,10 @@ Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi da
 ![Home Page](docs/screenshoot/beranda.png)
 
 ### Halaman Register
-![Register Page](docs/screenshot/register.png)
+![Register Page](docs/screenshoot/register.png)
 
 ### Halaman Login
-![Login Page](docs/screenshot/login.png)
+![Login Page](docs/screenshoot/login.png)
 
 ### Halaman Berhasil Login
-![Berhasil Login Page](docs/screenshot/tampilan berhasil login.png)
+![Berhasil Page](docs/screenshoot/tampilan berhasil login.png)
