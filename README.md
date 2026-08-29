@@ -30,5 +30,5 @@ Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi da
 ### Halaman Login
 ![Login Page](docs/screenshoot/login.png)
 
-### Halaman Berhasil Login
-![Berhasil Page](docs/screenshoot/tampilan berhasil login.png)
+### Halaman Menu
+![Menu Page](docs/screenshoot/tampilan berhasil login.png)
