@@ -8,7 +8,7 @@
 </p>
 
 
-# News Portal - Laravel CRUD App
+# Portal Berita - Laravel CRUD App
 
 Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi dan CRUD (Create, Read, Update, Delete) untuk mengelola konten berita.
 
@@ -22,7 +22,10 @@ Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi da
 ## Screenshot
 
 ### Halaman Home
-![Home Page](docs/screenshoot/beranda.png)
+![Home Page](docs/screenshoot/beranda-berita.png)
+
+### Halaman Readmore Berita
+![Readmore Page](docs/screenshoot/readmore-berita.png)
 
 ### Halaman Register
 ![Register Page](docs/screenshoot/register.png)
@@ -31,4 +34,16 @@ Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi da
 ![Login Page](docs/screenshoot/login.png)
 
 ### Halaman Menu
-![Menu Page](docs/screenshoot/tampilan-berhasil-login.png)
+![Menu Page](docs/screenshoot/portal-berita.png)
+
+### Halaman Create Berita
+![Create Page](docs/screenshoot/buat-berita.png)
+
+### Halaman Detail Berita
+![Detail Page](docs/screenshoot/detail-berita.png)
+
+### Halaman Edit Berita
+![Edit Page](docs/screenshoot/edit-berita.png)
+
+### Halaman Delete Berita
+![Delete Page](docs/screenshoot/delete-post.png)
