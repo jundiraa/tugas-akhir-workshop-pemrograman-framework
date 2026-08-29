@@ -47,3 +47,10 @@ Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi da
 
 ### Halaman Delete Berita
 ![Delete Page](docs/screenshoot/delete-post.png)
+
+### Database: news
+![Database Page](docs/screenshoot/struktur-database.png)
+
+### Table: posts
+![Table Page](docs/screenshoot/struktur-tabel-posts.png)
+![Table Page](docs/screenshoot/tabel-posts.png)
