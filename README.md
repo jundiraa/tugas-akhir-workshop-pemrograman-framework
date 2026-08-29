@@ -53,4 +53,5 @@ Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi da
 
 ### Table: posts
 ![Table Page](docs/screenshoot/struktur-tabel-posts.png)
+
 ![Table Page](docs/screenshoot/tabel-posts.png)
