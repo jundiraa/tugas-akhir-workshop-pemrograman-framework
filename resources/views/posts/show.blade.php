@@ -5,6 +5,6 @@
         <a href="{{ route('posts.index') }}" class="btn btn-secondary"><< Kembali</a>
         <h1>{{ $post->title }}</h1>
         <p>by {{ $post->author->name }}</p>
-        <div>{{ $post->body }}</div>
+        <p style="white-space: pre-line;">{{ $post->body }}</p>
     </div>
 @endsection

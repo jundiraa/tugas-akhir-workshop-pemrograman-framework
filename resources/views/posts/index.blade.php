@@ -1,5 +1,9 @@
 @extends('layout/aplikasi')
 
+@php
+    use Illuminate\Support\Str;
+@endphp
+
 @section('konten')
     <a href="/posts/create" class="btn btn-primary">++ Tambah Berita</a>
     <table class="table">
@@ -17,11 +21,11 @@
                     <td>{{ $post->id }}</td>
                     <td>{{ $post->title }}</td>
                     <td>{{ $post->slug }}</td>
-                    <td>{{ $post->body }}</td>
+                    <td>{{ Str::limit($post->body, 100) }}</td>
                     <td>
                         <a class="btn btn-secondary btn-sm" href="{{ route('posts.show', $post->id) }}">Detail</a>
-                        <a class="btn btn-warning btn-sm" href="{{ url('/post/'.$post->id.'/edit') }}">Edit</a>
-                        <form onsubmit="return confirm('Hapus berita {{ $post->title }}?')" action="{{ '/post/'.$post->id }}" method="POST">
+                        <a class="btn btn-warning btn-sm" href="{{ route('posts.edit', $post->id) }}">Edit</a>
+                        <form onsubmit="return confirm('Hapus berita {{ $post->title }}?')" action="{{ route('posts.destroy', $post->id) }}" method="POST">
                             @csrf
                             @method('delete')
                             <button class="btn btn-danger btn-sm" type="submit">Hapus</button>

@@ -42,13 +42,10 @@ Route::get('/about', function() {
 });
 
 Route::get('/', function() {
-    return view('pages', ['title' => 'Home', 'posts' => Post::all() ]);
+    return view('pages', ['title' => 'Berita', 'posts' => Post::all() ]);
 });
 
-Route::get('/posts/{post:slug}', function(Post $post) {
-    //$post = Post::find($slug);
-    return view('page', ['title' => 'Single Post', 'post' => $post]);
-});
+// pindah Route post dari sini
 
 Route::get('/authors/{user:username}', function(User $user) {
     return view('pages', ['title' => count($user->posts) . ' Article by ' .$user->name, 'posts' => $user->posts]);
@@ -60,9 +57,19 @@ Route::get('/contact', function() {
 
 Route::middleware('auth')->group(function () {
     Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
-    Route::get('/posts/create', [PostController::class, 'create'])->name('posts/create');
+    Route::get('/posts/create', [PostController::class, 'create'])->name('posts.create');
     Route::post('/posts', [PostController::class, 'store'])->name('posts.store');
-    Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show');
+    Route::get('/posts/{id}', [PostController::class, 'show'])->name('posts.show')->where('id', '[0-9]+');
+    Route::get('/posts/{id}/edit', [PostController::class, 'edit'])->name('posts.edit')->where('id', '[0-9]+');
+    Route::put('/posts/{id}', [PostController::class, 'update'])->name('posts.update')->where('id', '[0-9]+');
+    Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('posts.destroy')->where('id', '[0-9]+');
+});
+
+// Route post jadi disini
+
+Route::get('/posts/{post:slug}', function(Post $post) {
+    //$post = Post::find($slug);
+    return view('page', ['title' => 'Baca Berita', 'post' => $post]);
 });
 
 Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');

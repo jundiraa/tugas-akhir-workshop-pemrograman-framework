@@ -1,7 +1,6 @@
 @extends('layout/aplikasi')
 
 @section('konten')
-<a href="{{ route('posts.index') }}" class="btn btn-secondary"><< Batal</a>
 <form method="POST" action="{{ route('posts.store') }}" enctype="multipart/form-data">
   @csrf
   <div class="md:flex md:items-center mb-6">
@@ -19,15 +18,16 @@
   </div>
 
   <div class="md:flex md:items-center mb-6">
-    <div class="mb-3">
+    <div class="mb-3" style="width: 100%;">
       <text for="body" class="form-label">Isi Berita</label>
-      <textarea name="body" id="body" placeholder="Body" required></textarea>
+      <textarea name="body" id="body" class="form-control" rows="10" style="width: 100%;" placeholder="Tulis isi berita di sini..." required></textarea>
     </div>
   </div>
 
   <div class="md:flex md:items-center">
     <div class="mb-3">
       <button class="btn btn-primary" type="submit">Create</button>
+      <a href="{{ route('posts.index') }}" class="btn btn-secondary">Cancel</a>
     </div>
   </div>
 </form>
