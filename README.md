@@ -21,13 +21,13 @@ Deskripsi: projek laravel sederhana berbasis laravel dengan fitur autentikasi da
 ## Screenshot
 
 ### Halaman Home
-![Home Page](docs/screenshots/beranda.png)
+![Home Page](docs/screenshoot/beranda.png)
 
 ### Halaman Register
-![Register Page](docs/screenshots/register.png)
+![Register Page](docs/screenshot/register.png)
 
 ### Halaman Login
-![Login Page](docs/screenshots/login.png)
+![Login Page](docs/screenshot/login.png)
 
 ### Halaman Berhasil Login
-![Berhasil Login Page](docs/screenshots/tampilan berhasil login.png)
+![Berhasil Login Page](docs/screenshot/tampilan berhasil login.png)
